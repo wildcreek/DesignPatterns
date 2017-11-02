@@ -10,6 +10,9 @@ import com.wildcreek.designpatterns.decorator.PineChristmasTree;
 import com.wildcreek.designpatterns.observer.ClassBell;
 import com.wildcreek.designpatterns.observer.Student;
 import com.wildcreek.designpatterns.observer.Teacher;
+import com.wildcreek.designpatterns.singleton.EagerSingleton;
+import com.wildcreek.designpatterns.singleton.LazySingletonDoubleCheck;
+import com.wildcreek.designpatterns.singleton.LazySingletonStaticInner;
 import com.wildcreek.designpatterns.strategy.Fisherman;
 import com.wildcreek.designpatterns.strategy.SpearStrategy;
 
@@ -35,5 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Candy candy = new Candy(light);
         Log.e("decorator" , candy.display());
         Log.e("decorator" , candy.cost() +"");
+        // singleton 饿汉式、双检锁懒汉式、静态内部类懒汉式
+        EagerSingleton.getInstance();
+        LazySingletonDoubleCheck.getInstance();
+        LazySingletonStaticInner.getInstance();
     }
 }
