@@ -1,8 +1,11 @@
 # DesignPatterns
+
 -----
 一句话举例设计模式<br>
+
 Java design patterns for learning ,described briefly with daily life example.
 -----
+
 
 ### Strategy 策略模式
 渔夫有三种捕鱼策略：钓鱼、网捕、叉鱼
