@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.wildcreek.designpatterns.adapter.ACPowerAdapter;
+import com.wildcreek.designpatterns.adapter.BoxPowerDevice;
+import com.wildcreek.designpatterns.adapter.PowerOutlet;
+import com.wildcreek.designpatterns.adapter.TVBox;
 import com.wildcreek.designpatterns.decorator.Candy;
 import com.wildcreek.designpatterns.decorator.Light;
 import com.wildcreek.designpatterns.decorator.PineChristmasTree;
@@ -42,5 +46,9 @@ public class MainActivity extends AppCompatActivity {
         EagerSingleton.getInstance();
         LazySingletonDoubleCheck.getInstance();
         LazySingletonStaticInner.getInstance();
+        //adapter TVBox需要BoxPowerDevice供电才能使用，PowerAdapter将ACPowerSource提供的交流电转换为合适直流电
+        TVBox tvBox  = new TVBox();
+        BoxPowerDevice boxPowerDevice = new ACPowerAdapter(new PowerOutlet());
+        tvBox.connectPower(boxPowerDevice);
     }
 }
