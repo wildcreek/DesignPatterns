@@ -1,8 +1,7 @@
 # DesignPatterns
+# 一句话举例设计模式
 
 -----
-一句话举例设计模式<br>
-
 Java design patterns for learning ,described briefly with daily life example.
 -----
 
