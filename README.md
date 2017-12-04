@@ -14,7 +14,7 @@ Java design patterns for learning ,described briefly with daily life example.
 铃声响了，老师听到了，走向教室；学生听到了，收起杂物准备上课
 > With bell ringing ，the teacher headed for classroom ,the students prepared for class.
 
-### Decorator 观察者模式
+### Decorator 装饰器模式
 有一个松木圣诞树，我们既可以装饰糖果，也可以装饰小灯泡
 > There is a pine Christmas tree, we could decorate it with candies ,thus making it a candy christmas tree ,or we could decorate with lights.
 
